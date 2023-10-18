@@ -1,16 +1,14 @@
 package org.lessons.java.ferragnezparty;
 
 import java.util.Scanner;
+
 /*
 Esercizio 2: Festa a casa Ferragnez
 State lavorando col servizio di sicurezza dei Ferragnez e il vostro compito è di assicurarvi che accedano alla festa solo gli invitati presenti sulla lista (in fondo al post)
-Nel programma bisogna:
-    - creare e inizializzare l’array contenente i nomi degli invitati (trovate un esempio in fondo alla traccia);
-    - chiedere all’utente come si chiama;
-    - verificare che il nome sia presente nella lista lasciarlo entrare o rispedirlo cortesemente da dove è venuto;
+implementare lo stesso programma usando il ciclo while
 */
-public class PartyFerragnez {
 
+public class PartyFerragnezWhile {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
@@ -21,16 +19,21 @@ public class PartyFerragnez {
 
         boolean found = false;
 
-        for (int i = 0; i < list.length; i++) {
+        //Inizio ciclo While
+        int i = 0;
+
+        while (i < list.length) {
             if (findGuest.equals(list[i])) {
                 found = true;
                 break;
             }
+            i++;
         }
+
         if (found) {
-            System.out.print("l'invitato è nella lista");
+            System.out.println("L'invitato " + findGuest + " è presente nella lista.");
         } else {
-            System.out.print("l'invitato non è nella lista");
+            System.out.println("L'invitato " + findGuest + " non è presente nella lista.");
         }
 
         scan.close();
