@@ -1,8 +1,8 @@
-package org.lessons.java.train;
+package org.lessons.java.ticketrain;
 
 import java.util.Scanner;
 
-public class ticketrain {
+public class TickeTrain {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);

@@ -1,7 +1,7 @@
 package org.lessons.java.ferragnezparty;
 
 import java.util.Scanner;
-public class party {
+public class PartyFerragnez {
 
     /*
     State lavorando col servizio di sicurezza dei Ferragnez e il vostro compito è di assicurarvi che accedano alla festa solo gli invitati presenti sulla lista (in fondo al post)
